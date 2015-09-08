@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.gtafe.taiyuan_sensor.CircleMenuLayout
+        android:id="@+id/id_menulayout"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:padding="100dp" >
+
+        <RelativeLayout
+            android:id="@id/id_circle_menu_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+        </RelativeLayout>
+    </com.gtafe.taiyuan_sensor.CircleMenuLayout>
+
+</LinearLayout>

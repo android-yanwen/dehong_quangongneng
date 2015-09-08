@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <Button 
+            android:id="@+id/test_order_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="测试"/>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button 
+                android:id="@+id/scan_order_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="扫描设备"/>
+            <Spinner 
+                android:id="@+id/scan_spinner"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button 
+                android:id="@+id/connect_order_btn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="连接"/>
+            <EditText 
+                android:id="@+id/device_disp_tv"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:singleLine="true"
+                android:hint="设备"/>
+        </LinearLayout>
+        <Button 
+            android:id="@+id/disconnect_order_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="断开"/>
+    </LinearLayout>
+    
+    <ScrollView 
+        android:id="@+id/disp_order_sv"
+        android:keepScreenOn="true"
+        android:layout_marginLeft="400dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:layout_width="300dp"
+        android:layout_height="200dp">
+        <TextView 
+            android:id="@+id/disp_order_tv"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+    <Button 
+        android:id="@+id/bluetooth_help_btn"
+        android:layout_marginLeft="400dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disp_order_sv"
+        android:text="蓝牙简介"/>
+    
+	<ListView 
+	    android:id="@+id/bluetooth_sensor_lv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="250dp"></ListView>
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gtafe.taiyuan_sensor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dehongicon"
+        android:label="@string/app_name"
+        android:name="Application">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="SerialPortPreferences"></activity>
+        <activity android:name="com.gtabox.bluetooth.BluetoothWindow"
+            android:windowSoftInputMode="stateHidden"
+            android:label="蓝牙界面"></activity>
+        <activity android:name="com.gtabox.gprs.GprsWindow"
+            android:label="GPRS界面"></activity>
+        <activity android:name="com.gtabox.ipv6.Ipv6Window"
+            android:label="Ipv6"></activity>
+        <activity android:name="com.gtabox.rfid.RfidWindow"
+            android:label="RFID"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name="com.gtabox.rfid.LrfidActivity"></activity>
+        <activity android:name="com.gtabox.rfid.HrfidActivity"></activity>
+        <activity android:name="com.gtabox.rfid.UrfidActivity"></activity>
+        <activity android:name="com.gtabox.wifi.WifiWindow"
+            android:label="WIFI"></activity>
+        <activity android:name="com.gtabox.zigbee.ZigbeeWindow"
+            android:label="Zigbee"></activity>
+        <activity android:name="com.gtabox.zigbee.ZigbeeDataWindow"></activity>
+        <activity android:name="com.gtabox.zigbee.ZigbeeTopologicWindow"></activity>
+        <activity android:name="com.gtabox.zigbee.ZigbeeTempHumiSensor"></activity>
+        <activity android:name="com.gtabox.zigbee.ZigbeeIlluminateSensor"></activity>
+        <activity android:name="com.gtabox.zigbee.ZigbeeInfraredSensor"></activity>
+        <activity android:name="com.gtabox.zigbee.ZigbeeDetailDataWindow"></activity>
+    </application>
+</manifest>

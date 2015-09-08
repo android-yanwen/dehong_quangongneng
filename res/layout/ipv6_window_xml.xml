@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="获取数据之前请先连接串口!"/>
+    <LinearLayout 
+        android:id="@+id/lv_title_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/title_img_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="传感器图片"/>
+        <TextView
+            android:id="@+id/title_name_tv"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="传感器名称"/>
+        <TextView
+            android:id="@+id/title_data_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="数据"/>
+<!--         <TextView
+            android:id="@+id/title_addr_tv"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="网络地址"/> -->
+    </LinearLayout>
+<!--     <Button 
+        android:id="@+id/clicked_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="clicked"/> -->
+
+	<ListView 
+		android:id="@+id/ipv6_lv"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

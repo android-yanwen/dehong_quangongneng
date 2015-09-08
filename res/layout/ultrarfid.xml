@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rfid_background"
+    android:orientation="vertical" >
+
+    <!-- android:background="#a52a2a" #4bafc6 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/read_module"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/readultra"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/module_info"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:focusable="false"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/query_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/querytag"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/tag"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/tag_info"
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.00"
+                    android:focusable="false"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00a0cc"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/addrtv"
+                            android:textSize="25sp" />
+
+                        <EditText
+                            android:id="@+id/addr_start"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:hint="addr"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textSize="25sp" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/lentv"
+                            android:textSize="25sp" />
+
+                        <EditText
+                            android:id="@+id/word_len"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:hint="len"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/password1"
+                            android:textSize="25sp" />
+
+                        <EditText
+                            android:id="@+id/password"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:hint="Pass"
+                            android:inputType="number"
+                            android:maxLength="8"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textwarn"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:background="#00a0cc"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:text="选择操作区域"
+                        android:textSize="30sp" />
+
+                    <RadioGroup
+                        android:id="@+id/block_rg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/keep_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_radiobutton" 
+                            android:text="保留区"
+                            android:textSize="25sp" />
+
+                        <RadioButton
+                            android:id="@+id/epc_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_radiobutton" 
+                            android:text="E P C区"
+                            android:textSize="25sp" />
+
+                        <RadioButton
+                            android:id="@+id/tid_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_radiobutton" 
+                            android:text="T I D区"
+                            android:textSize="25sp" />
+
+                        <RadioButton
+                            android:id="@+id/user_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_radiobutton" 
+                            android:text="用户区"
+                            android:textSize="25sp" />
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/read_ultra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Read"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/write_ultra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Write"
+                            android:textSize="25sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="数据：(字/Hex)"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/tag_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

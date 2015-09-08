@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/brief_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_orange_light"
+        android:text="模块通过TCP/IP网络通信协议进行数据传输\n通信前请先确定端口号再启动TCP服务器"/>
+    <Button 
+        android:id="@+id/lunch_server_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动服务"/>
+    <LinearLayout 
+        android:id="@+id/title_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="传感器图片"/>
+        <TextView 
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="传感器名称"/>
+        <TextView 
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="传感器数据"/>
+        <TextView 
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="节点类型"/>
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/wifi_data_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

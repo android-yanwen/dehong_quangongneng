@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal" >
+    
+    <TextView 
+        android:id="@+id/sensor_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="温湿度传感器"/>
+    <LinearLayout 
+        android:id="@+id/linearly_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/sensor_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据："/>
+        <TextView 
+            android:id="@+id/sensor_data_tx_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
